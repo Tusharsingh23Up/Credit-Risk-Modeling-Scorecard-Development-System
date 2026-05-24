@@ -236,7 +236,7 @@ Automate risk assessment
 Enhance regulatory compliance
 Author
 
-Your Name
+Tushar Singh
 
 Data Science | Machine Learning | Credit Risk Analytics
 
