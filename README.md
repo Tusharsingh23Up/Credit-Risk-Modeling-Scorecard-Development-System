@@ -1,245 +1,156 @@
-# Credit-Risk-Modeling-Scorecard-Development-System
-End-to-End Credit Risk Modeling &amp; Scorecard Development System using Logistic Regression, WoE/IV, Feature Engineering, Risk Segmentation, and Credit Scoring Pipeline for Financial Risk Analytics.
-A complete End-to-End Credit Risk Modeling & Scorecard Development Project designed for financial institutions, fintech companies, and risk analytics teams to assess borrower default risk and generate interpretable credit scorecards.
+# 🏦 Credit Risk Modeling & Scorecard Development System
 
-This project demonstrates the complete lifecycle of a credit risk scorecard model, from data preprocessing to Probability of Default (PD) estimation, Weight of Evidence (WoE) transformation, Information Value (IV) analysis, logistic regression modeling, and credit score generation.
-Project Overview
+![Python](https://img.shields.io/badge/Python-Risk%20Analytics-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Logistic%20Regression-orange?style=for-the-badge)
+![Banking](https://img.shields.io/badge/Banking-Credit%20Risk-0A66C2?style=for-the-badge)
+![Scorecard](https://img.shields.io/badge/Scorecard-WoE%20%7C%20IV-2E8B57?style=for-the-badge)
 
-Credit Risk Modeling is one of the most critical applications in the banking and financial industry. Financial institutions use scorecards to estimate the probability of customer default and make lending decisions.
+> **A credit risk analytics project for building a loan default prediction model, developing a scorecard, segmenting customer risk, and supporting lending decisions.**
 
-This project provides a structured, production-style workflow for building a credit scoring system with interpretable machine learning techniques.
+---
 
-Main Objectives
-Predict customer default probability
-Build an interpretable scorecard model
-Apply Weight of Evidence (WoE) transformation
-Perform Information Value (IV) feature selection
-Develop Logistic Regression Credit Risk Model
-Generate customer credit scores
-Create risk segmentation
-Evaluate model performance using standard risk metrics
-Key Features
+## 🚀 Project Overview
 
-✔ End-to-End Credit Risk Pipeline
-✔ Data Cleaning & Missing Value Handling
-✔ Exploratory Data Analysis (EDA)
-✔ Feature Engineering for Credit Risk
-✔ Weight of Evidence (WoE) Transformation
-✔ Information Value (IV) Feature Selection
-✔ Logistic Regression Scorecard Model
-✔ Probability of Default (PD) Estimation
-✔ Credit Score Generation
-✔ Risk Band Classification
-✔ Model Evaluation & Validation
-✔ ROC Curve, AUC, KS Statistic
-✔ Modular Production-Ready Code Structure
+This project focuses on **credit risk modeling**, a key analytics use case in banking, fintech, NBFCs, and lending institutions.
 
-Project Architecture
-Raw Data
-    ↓
-Data Cleaning
-    ↓
-Exploratory Data Analysis
-    ↓
-Feature Engineering
-    ↓
-WoE Binning & IV Analysis
-    ↓
-Train/Test Split
-    ↓
-Logistic Regression Model
-    ↓
-Model Evaluation
-    ↓
-Scorecard Generation
-    ↓
-Credit Score Assignment
-    ↓
-Risk Segmentation
-Tech Stack
-Programming Language
-Python
-Libraries Used
-Pandas
-NumPy
-Scikit-learn
-Matplotlib
-Seaborn
-SciPy
-ScorecardPy (Optional)
-Development Tools
-Jupyter Notebook
-VS Code
-Git
-GitHub
-Project Structure
-credit-risk-modeling-scorecard/
+The system uses borrower-level data to estimate default probability and create a structured credit scorecard using feature engineering, Weight of Evidence, Information Value, logistic regression, risk segmentation, and model performance evaluation.
 
-│── data/
+---
+
+## 🎯 Business Problem
+
+Lenders need to evaluate whether a borrower is likely to repay a loan. Poor credit decisions can increase default losses, while overly strict decisions can reduce business growth.
+
+This project supports credit decisioning by predicting default probability, classifying customers by risk level, improving loan approval decisions, and creating transparent scorecard logic.
+
+---
+
+## ✅ Key Features
+
+| Feature | Description |
+|---|---|
+| Data Cleaning | Handles missing values, outliers, and inconsistent records |
+| Feature Engineering | Creates borrower-level risk variables |
+| WoE Transformation | Converts variables into risk-friendly bins |
+| IV Calculation | Measures predictor strength |
+| Logistic Regression | Predicts default probability |
+| Scorecard Development | Converts model output into business-friendly scores |
+| Risk Segmentation | Groups borrowers into low, medium, and high risk |
+| Model Evaluation | Uses ROC-AUC, KS statistic, confusion matrix, and accuracy |
+
+---
+
+## 📊 Credit Risk Workflow
+
+```text
+Borrower Data → Data Cleaning → Feature Engineering → WoE / IV Analysis → Logistic Regression → Probability of Default → Credit Scorecard → Risk Segmentation
+```
+
+---
+
+## 📌 Key Metrics
+
+- Probability of Default
+- ROC-AUC Score
+- KS Statistic
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Information Value
+- Credit Score
+- Risk Band
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tools |
+|---|---|
+| Programming | Python |
+| Data Processing | Pandas, NumPy |
+| Machine Learning | Scikit-learn |
+| Modeling | Logistic Regression |
+| Risk Analytics | WoE, IV, Scorecard |
+| Visualization | Matplotlib, Plotly |
+| Notebook | Jupyter Notebook |
+
+---
+
+## 📁 Project Structure
+
+```text
+credit-risk-scorecard-model/
+├── data/
 │   ├── raw/
-│   ├── processed/
-│   └── external/
-
-│── notebooks/
-│   ├── 01_EDA.ipynb
-│   ├── 02_Feature_Engineering.ipynb
-│   ├── 03_WOE_IV.ipynb
-│   ├── 04_Model_Training.ipynb
-│   └── 05_Scorecard_Development.ipynb
-
-│── src/
-│   ├── data_preprocessing.py
-│   ├── feature_engineering.py
+│   └── processed/
+├── notebooks/
+│   └── credit_risk_modeling.ipynb
+├── src/
+│   ├── preprocessing.py
 │   ├── woe_iv.py
-│   ├── model_training.py
-│   ├── scorecard.py
-│   └── utils.py
+│   ├── modeling.py
+│   └── scorecard.py
+├── reports/
+│   └── model_summary.pdf
+├── assets/
+│   └── screenshots/
+├── requirements.txt
+└── README.md
+```
 
-│── models/
-│   ├── trained_model.pkl
-│   └── scorecard.pkl
+---
 
-│── reports/
-│   ├── figures/
-│   ├── roc_curve.png
-│   └── model_report.pdf
+## 📸 Screenshots
 
-│── requirements.txt
-│── README.md
-│── LICENSE
-│── .gitignore
-Dataset Information
+```markdown
+![Model Performance](assets/screenshots/model-performance.png)
+![Scorecard Output](assets/screenshots/scorecard-output.png)
+![Risk Segmentation](assets/screenshots/risk-segmentation.png)
+```
 
-The dataset contains customer financial and demographic attributes used to predict whether a borrower will default on a loan.
+---
 
-Example Features
-Feature	Description
-Age	Customer Age
-Income	Annual Income
-Loan Amount	Requested Loan Amount
-Credit History	Previous Credit Duration
-Employment Status	Employment Type
-Property Ownership	Owned/Rented
-Number of Dependents	Family Dependency
-Default	Target Variable
-Target Variable
-0 → Non Default
-1 → Default
-Methodology
-1. Data Preprocessing
-Missing value treatment
-Duplicate removal
-Outlier handling
-Data type correction
-2. Exploratory Data Analysis (EDA)
-Distribution analysis
-Correlation analysis
-Class imbalance checking
-Risk trend visualization
-3. Feature Engineering
+## 📈 Example Output
 
-Creation of meaningful risk variables such as:
+| Customer ID | Probability of Default | Credit Score | Risk Segment |
+|---|---:|---:|---|
+| CUST001 | 0.08 | 742 | Low Risk |
+| CUST002 | 0.31 | 615 | Medium Risk |
+| CUST003 | 0.67 | 488 | High Risk |
 
-Debt-to-Income Ratio
-Loan-to-Income Ratio
-Credit Utilization Features
-Customer Stability Indicators
-4. WoE & IV Transformation
+---
 
-WoE transformation converts categorical and numerical variables into statistically meaningful bins for scorecard modeling.
+## 💼 Business Impact
 
-Information Value (IV) helps determine predictive power:
+This project demonstrates how data analytics can improve lending decisions by reducing default risk, standardizing credit evaluation, creating explainable risk scores, and supporting portfolio monitoring.
 
-IV Range	Predictive Power
-< 0.02	Weak
-0.02–0.1	Medium
-0.1–0.3	Strong
-> 0.3	Very Strong
-5. Model Development
+---
 
-A Logistic Regression Model is trained to estimate Probability of Default (PD).
+## 🚀 How to Run
 
-Why Logistic Regression?
-
-Highly interpretable
-Industry standard for credit scoring
-Regulatory friendly
-Easy scorecard conversion
-6. Model Evaluation
-
-Performance metrics used:
-
-Accuracy
-Precision
-Recall
-F1 Score
-ROC-AUC Score
-KS Statistic
-Confusion Matrix
-Scorecard Development
-
-The trained logistic regression model is converted into a credit scorecard.
-
-Each borrower receives a risk score based on feature contribution.
-
-Example:
-
-Credit Score Range
-
-800+ → Excellent
-700–799 → Good
-600–699 → Moderate Risk
-500–599 → High Risk
-Below 500 → Very High Risk
-Results
-
-The model successfully predicts borrower default risk and generates interpretable credit scores for lending decisions.
-
-Example Outputs
-Default Probability
-Customer Credit Score
-Risk Category
-Approval Recommendation
-Installation
-
-Clone repository:
-
-git clone https://github.com/yourusername/credit-risk-modeling-scorecard.git
-
-Move into project directory:
-
-cd credit-risk-modeling-scorecard
-
-Install dependencies:
-
+```bash
+git clone https://github.com/Tusharsingh23Up/Credit-Risk-Modeling-Scorecard-Development-System.git
+cd Credit-Risk-Modeling-Scorecard-Development-System
 pip install -r requirements.txt
+```
 
-Run Project:
+---
 
-python src/model_training.py
-Future Improvements
-XGBoost Credit Risk Model
-LightGBM Risk Prediction
-Explainable AI (SHAP)
-Real-Time Credit Scoring API
-Streamlit Dashboard
-Model Monitoring Pipeline
-MLOps Deployment
-Business Impact
+## 🔮 Future Enhancements
 
-This system helps financial institutions:
+- XGBoost and Random Forest comparison
+- Reject inference
+- Model monitoring dashboard
+- PSI stability tracking
+- Automated credit policy rules
+- Streamlit deployment
 
-Reduce loan default risk
-Improve underwriting decisions
-Increase portfolio quality
-Automate risk assessment
-Enhance regulatory compliance
-Author
+---
 
-Tushar Singh
+## 👤 Author
 
-Data Science | Machine Learning | Credit Risk Analytics
+**Tushar Singh**  
+Financial Analyst Aspirant | Finance + Data Analytics + AI  
+GitHub: [Tusharsingh23Up](https://github.com/Tusharsingh23Up)
 
-License
-
-This project is licensed under the MIT License.
